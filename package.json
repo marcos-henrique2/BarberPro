@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/server.ts",
-    "start": "prisma migrate && prima generate && yarn dev"
+    "start": "prisma migrate && prisma generate && yarn dev"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
