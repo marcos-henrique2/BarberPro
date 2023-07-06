@@ -44,3 +44,6 @@ router.post('/webhooks', express.raw({type: 'application/json'}), new WebhooksCo
 router.post('/create-portal', isAuthenticated, new CreatePortalController().handle)
 
 export {router};
+
+//"dev": "ts-node-dev --transpile-only src/server.ts",
+//"start": "prisma migrate deploy && prisma generate && yarn dev"
